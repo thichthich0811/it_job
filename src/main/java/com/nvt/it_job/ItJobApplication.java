@@ -2,8 +2,12 @@ package com.nvt.it_job;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableAsync;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
+@EnableAsync
+@EnableScheduling
 // disable security
 // @SpringBootApplication(exclude = {
 // org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration.class,
